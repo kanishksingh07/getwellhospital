@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project Hospital management system</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+</head>
+<body>
+<section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="img/weblogo.png"></a> 
+            <div class="nav-links" id="navlinks">
+              <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="Appointment.html">Appointment</a></li>
+                    <li><a href="contact.html">Contact</a></li> 
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>    
+        </nav>
+        <h1>About us</h1>
+   
+
+</section>
+
+<!-----about us content----->
+<section class="about-us">
+    <div class="row">
+        <div class="about-col">
+            <h1>Your health is our priority</h1>
+            <p>A Hospital Management System (HMS), also known as a Hospital Information System (HIS) or Healthcare Information System (HIS), is a comprehensive software solution designed to automate and manage various administrative, financial, and clinical processes within a healthcare organization. It unifies and simplifies the work of healthcare professionals, streamlining interactions with patients and ensuring efficient healthcare performance. The system covers administrative, medical, legal, and financial aspects, making it a cornerstone for the successful operation of any healthcare facility
+            </p>
+            <a href="" class="hero-btn red-btn">EXPLORE</a>
+        </div>
+        <div class="about-col">
+            <img src="img/about.jpeg">
+        </div>
+    </div>
+</section>
+
+
+
+
+<!----footer---->
+   
+<section class="footer">
+    <h4>About Us</h4>
+    <p>we manage the hospital management system which is used for people <br>to get an appointment or consultancy from a doctor online</p>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!---------Javascript for Toggle Menu--------->
+<script>
+    var navlinks = document.getElementById("navlinks");
+    function showMenu(){
+        navlinks.style.right = "0";        
+    }
+    function hideMenu(){
+        navlinks.style.right = "-200px";
+
+    }
+</script>
+</body>
+</html>
