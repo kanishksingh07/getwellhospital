@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project Hospital management system</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+</head>
+<body>
+<section class="header">
+        <nav>
+            <a href="index.html"><img src="img/weblogo.png"></a> 
+            <div class="nav-links" id="navlinks">
+              <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="Appointment.html">Appointment</a></li>
+                    <li><a href="contact.html">Contact</a></li> 
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>    
+        </nav>
+    <div class="text-box">
+        <h1>Hospital Management system</h1>
+        <p>This system allows you get an doctors appintment while being at your home,<br>
+            get your appointment at your fingertips.        
+        </p>
+        <a href="" class="hero-btn">visit us to know more</a>
+    </div>    
+
+</section>
+
+<!--------course-------->
+
+
+<section class="Treatment">
+    <h1>Treatment we provide</h1>
+    <p>A · Addiction Treatment · Allergy (Asthma) · Anesthesiology · Anticoagulation · Audiology (Hearing) · B · Bariatric Surgery (Weight-loss Surgery)</p>
+    <div class="row">
+       <div class="treatment-col">
+        <h3>Allergy</h3>
+        <p>Allergies are your body's reaction to certain proteins. Allergens include inhalants and foods. Treatments include medications.</p>
+       </div>
+       <div class="treatment-col">
+        <h3>audiology</h3>
+        <p> the treatment of auditory disorders in children to older adults, including assessments, hearing aid coupling, real-ear measurements</p>
+       </div>
+       <div class="treatment-col">
+        <h3>bariaitic surgery</h3>
+        <p> Bariatric surgery is done when diet and exercise haven't worked or when you have serious health problems because of your weight</p>
+       </div>
+
+    </div>
+
+</section>
+
+<!--------department-------->
+
+<section class="department">
+    <h1>Our different department</h1>
+    <p>We have three department in our hospital Clinic department,Emergency department,Administration department</p>
+    <div class="row">
+        <div class="department-col">
+            <img src="img/clinic.jpeg">
+            <div class="layer">
+                <h3>Clinic</h3>
+
+            </div>
+        </div>
+        <div class="department-col">
+            <img src="img/emergency.jpeg">
+            <div class="layer">
+                <h3>Emergency</h3>
+
+            </div>
+        </div>
+        <div class="department-col">
+            <img src="img/admin.jpeg">
+            <div class="layer">
+                <h3>Administration</h3>
+
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!------ facilities ------>
+
+<section class="facilities">
+    <h1>Our facilities</h1>
+    <p>We provide several facilities To :</p>
+    <div class="row">
+        <div class="facilities-col">
+            <img src="img/registeration.jpeg">
+            <h3>Online registeration</h3>
+            <p>Now registration is made easy through online registration</p>
+        </div>
+        <div class="facilities-col">
+            <img src="img/Doctor.jpeg">
+            <h3>Online doctor consultancy</h3>
+            <p>Patients can get online consultancy through doctor without visiting the hospital</p>
+        </div>
+        <div class="facilities-col">
+            <img src="img/therapy.jpeg">
+            <h3>Therapy consultancy</h3>
+            <p>We also provide online Therapy when needed</p>
+        </div>
+    </div>
+</section>
+
+<!------testimonials------>
+
+<section class="testimonials">
+    <h1>What our visitors say</h1>
+    <p>Patients also give their precious feedback to us</p>
+
+    <div class="row">
+        <div class="testimonial-col">
+            <img src="img/aryan.jpg">
+            <div>
+                <p>The website really helped me a lot,specially the online consultancy feature.</p>
+                <h3>Aryan singh</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+        </div>
+        <div class="testimonial-col">
+            <img src="img/shivam.jpg">
+            <div>
+                <p>The online therapy feature was great but the therepist was not much professional</p>
+                <h3>Shivam singh</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!----call to action---->
+
+<section class="cta">
+    <h1>Get your appointment from <br>wherever you are</h1>
+    <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" class="hero-btn">CONTACT US</a>
+
+</section>
+
+
+<!----footer---->
+   
+<section class="footer">
+    <h4>About Us</h4>
+    <p>we manage the hospital management system which is used for people <br>to get an appointment or consultancy from a doctor online</p>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!---------Javascript for Toggle Menu--------->
+<script>
+    var navlinks = document.getElementById("navlinks");
+    function showMenu(){
+        navlinks.style.right = "0";        
+    }
+    function hideMenu(){
+        navlinks.style.right = "-200px";
+
+    }
+</script>
+</body>
+</html>
