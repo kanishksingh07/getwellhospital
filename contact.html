@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project Hospital management system</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+</head>
+<body>
+<section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="img/weblogo.png"></a> 
+            <div class="nav-links" id="navlinks">
+              <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="Appointment.html">Appointment</a></li>
+                  <li><a href="contact.html">Contact</a></li>  
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>    
+        </nav>
+        <h1>Contact us</h1>
+   
+
+</section>
+
+<!-----contact us content----->
+<section class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3764.4283404921794!2d72.91677999999999!3d19.350597100000012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7a56dd564fc65%3A0xdedc6f62731ee7eb!2sUniversal%20College%20of%20Engineering%20Mumbai!5e0!3m2!1sen!2sin!4v1709500719346!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</section>
+
+<section class="contact-us">
+    <div class="row">
+        <div class="contact-col">
+            <div>
+                <i class="fa fa-home"></i>
+                <span>
+                    <h5>xyz road, ABC building</h5>
+                    <p>Banglore, karataka, IN</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <span>
+                    <h5>91+4215677654</h5>
+                    <p>monday to saturday,10 to 6 PM</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-mail"></i>
+                <span>
+                    <h5>xyz@info.com</h5>
+                    <p>Email us your query</p>
+                </span>
+            </div>
+        </div>
+    </div>
+ <div class="contact-col">
+
+    <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="fa30de55-b50d-4176-abb3-325d6b07c060">
+        <input type="text" name="name" placeholder="Enter your name"required>
+        <input type="email" name="email" placeholder="Enter Email add"required>
+        <input type="text" name="subject" placeholder="Enter your name"required>
+        <textarea rows="8" name="message"placeholder="message"required></textarea>
+        <button type="submit" class="hero-btn red red-btn">send messagge</button>
+    </form>
+</div>
+   
+        
+</section>
+
+
+
+
+<!----footer---->
+   
+<section class="footer">
+    <h4>About Us</h4>
+    <p>we manage the hospital management system which is used for people <br>to get an appointment or consultancy from a doctor online</p>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!---------Javascript for Toggle Menu--------->
+<script>
+    var navlinks = document.getElementById("navlinks");
+    function showMenu(){
+        navlinks.style.right = "0";        
+    }
+    function hideMenu(){
+        navlinks.style.right = "-200px";
+
+    }
+</script>
+</body>
+</html>
